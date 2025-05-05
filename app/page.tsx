@@ -49,6 +49,7 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <button className="btn btn-primary">DaisyUI</button>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
