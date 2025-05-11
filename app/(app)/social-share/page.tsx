@@ -108,7 +108,7 @@ export default function page() {
 
   return (
     <div className="container mx-auto p-4 max-w-4xl">
-      <h1 className="text-3xl font-bold mb-6 text-center">
+      <h1 className="text-4xl font-bold mb-6 text-center">
         Social Media Image Creator
       </h1>
 
@@ -125,14 +125,14 @@ export default function page() {
             <input
               type="file"
               onChange={handleFileUpload}
-              className="file-input file-input-bordered file-input-info w-full rounded-lg"
+              className="file-input file-input-bordered file-input-success w-full rounded-lg"
             />
           </div>
 
           {/* To show progress bar once the progre */}
           {isUploading && (
             <div className="mt-4">
-              <progress className="progress progress-info w-full"></progress>
+              <progress className="progress progress-success w-full"></progress>
             </div>
           )}
 
@@ -143,7 +143,7 @@ export default function page() {
 
               <div className="form-control">
                 <select
-                  className="select select-info outline-none w-full"
+                  className="select select-success outline-none w-full"
                   value={selectedFormat}
                   onChange={(e) =>
                     setSelectedFormat(e.target.value as SocialFormat)
@@ -180,6 +180,7 @@ export default function page() {
                     gravity="auto"
                     ref={imageRef}
                     onLoad={() => setIsTransforming(false)}
+                    className="rounded-lg"
                   />
                 </div>
               </div>
@@ -187,7 +188,7 @@ export default function page() {
               {/* Download button : */}
               <div className="card-actions justify-end mt-6">
                 <button
-                  className="btn btn-info rounded-lg"
+                  className="btn btn-success rounded-lg"
                   onClick={handleDownload}
                 >
                   Download for {selectedFormat}
