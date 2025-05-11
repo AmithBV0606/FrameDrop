@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { CldImage } from "next-cloudinary";
+import { toast } from "react-toastify";
 
 const socialFormats = {
   "Instagram Square (1:1)": {
@@ -55,7 +56,9 @@ export default function page() {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const file = event.target.files?.[0];
+
     if (!file) return;
+
     setIsUploading(true);
 
     // Collecting the form data
@@ -69,15 +72,15 @@ export default function page() {
         body: formData,
       });
 
-      console.log(response);
+      if (response.ok) toast.success("Image uploaded successfully!");
 
-      if (!response.ok) throw new Error("Failed to upload the imageeeeee!");
+      if (!response.ok) throw new Error("Failed to upload the image!");
 
       const data = await response.json();
       setUploadedImage(data.publicId);
     } catch (error) {
       console.log(error);
-      alert("Failed to upload the image!");
+      toast.error("Failed to upload the image!");
     } finally {
       setIsUploading(false);
     }
@@ -129,7 +132,7 @@ export default function page() {
             />
           </div>
 
-          {/* To show progress bar once the progre */}
+          {/* To show progress bar while the image is being uploaded  */}
           {isUploading && (
             <div className="mt-4">
               <progress className="progress progress-success w-full"></progress>
