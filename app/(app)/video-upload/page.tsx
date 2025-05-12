@@ -63,7 +63,7 @@ export default function page() {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Upload Video</h1>
 
-      <form className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {/* Title : */}
         <div className="space-y-2">
           <label className="label">
