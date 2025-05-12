@@ -47,7 +47,10 @@ export default function page() {
 
       if (!response.ok) throw new Error("Failed to upload the video!");
 
-      if (response.ok) toast.success("Video uploaded successfully!");
+      if (response.ok) {
+        toast.success("Video uploaded successfully!");
+        router.push("/home");
+      }
     } catch (error) {
       console.log(error);
       toast.error("Failed to upload the video!");
