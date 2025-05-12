@@ -51,7 +51,7 @@ export default function VideoCard({ video, onDownload }: VideoCardProps) {
       src: publicId,
       width: 400,
       height: 225,
-      rawTransformations: ["e_preview:duration_15:max_seg_9:min_seg_dur_1"],
+      rawTransformations: ["e_preview:duration_5:max_seg_9:min_seg_dur_1"],
     });
   }, []);
 
@@ -82,7 +82,7 @@ export default function VideoCard({ video, onDownload }: VideoCardProps) {
 
   return (
     <div
-      className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300"
+      className="card bg-black rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -161,7 +161,7 @@ export default function VideoCard({ video, onDownload }: VideoCardProps) {
         <div className="flex justify-between items-center mt-4">
           <div className="text-sm font-semibold">
             Compression :
-            <span className="text-accent">{compressionPercentage}%</span>
+            <span className="text-accent"> {compressionPercentage}%</span>
           </div>
 
           {/* Download button : */}
