@@ -107,7 +107,7 @@ export default function Navbar() {
 
       {/* Drawer for mobile screens : */}
       {isOpen && (
-        <div className="relative md:hidden">
+        <div className="relative @md:hidden">
           <MobileDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       )}
