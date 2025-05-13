@@ -1,3 +1,4 @@
+import MainDrawer from "@/components/MainDrawer";
 import Navbar from "@/components/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -22,7 +23,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        {/* {children} */}
+
+        <main className="flex">
+          {/* Drawer for large screen : */}
+          <div className="grow-[25vw]">
+            <MainDrawer />
+          </div>
+
+          {/* Children */}
+          <div className="grow-[75vw] w-full">{children}</div>
+        </main>
       </body>
     </html>
   );
