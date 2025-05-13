@@ -64,7 +64,7 @@ export default function Navbar() {
             onClick={async () => {
               await signOut();
             }}
-            className="bg-[#DD2803] p-3 rounded-full cursor-pointer hidden md:block -ml-2"
+            className="bg-[#DD2803] p-3 rounded-full cursor-pointer hidden sm:block -ml-2 sm:ml-1"
           >
             <LogOutIcon className="h-6 w-6" />
           </button>
