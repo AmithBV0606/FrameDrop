@@ -110,19 +110,19 @@ export default function page() {
   };
 
   return (
-    <div className="container mx-auto p-4 max-w-4xl">
-      <h1 className="text-4xl font-bold mb-6 text-center">
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold mb-4 text-center">
         Social Media Image Creator
       </h1>
 
       <div className="card">
         <div className="card-body">
-          <h2 className="card-title mb-4">Upload an Image</h2>
+          <h2 className="card-title mb-2">Upload an Image</h2>
 
           {/* Input field : */}
           <div className="form-control">
             <label className="label">
-              <span className="label-text mb-3">Choose an image file</span>
+              <span className="label-text mb-1">Choose an image file</span>
             </label>
 
             <input

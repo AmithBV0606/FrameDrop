@@ -44,7 +44,7 @@ export default function page() {
 
   if (loading) {
     return (
-      <div className="w-full h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center">
         <span className="text-2xl font-semibold italic">Loading</span>
         <span className="loading loading-dots loading-md mt-3"></span>
       </div>
