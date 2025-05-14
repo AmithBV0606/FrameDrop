@@ -29,3 +29,10 @@ export interface Brands {
   name: string;
   icon: LucideIcon;
 }
+
+export interface Features {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  benefits: string[];
+}
