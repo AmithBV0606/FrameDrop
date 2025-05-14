@@ -36,3 +36,10 @@ export interface Features {
   description: string;
   benefits: string[];
 }
+
+export interface Steps {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  image: string;
+}
