@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export interface Video {
   id: string;
   title: string;
@@ -21,4 +23,9 @@ export interface ImageFormat {
     scale: number;
     rotation: number;
   };
+}
+
+export interface Brands {
+  name: string;
+  icon: LucideIcon;
 }
