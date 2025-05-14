@@ -33,10 +33,10 @@ export function ProcessSteps() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-44 items-center">
           {/* Image Showcase section : */}
-          <div className="order-2 lg:order-1">
-            <div className="relative bg-gradient-to-br from-black/80 to-gray-900/80 backdrop-blur-sm p-6 rounded-3xl border border-white/10 aspect-video overflow-hidden">
+          <div className="order-1 lg:order-1">
+            <div className="relative bg-gradient-to-br from-black/80 to-gray-900/80 backdrop-blur-sm p-6 rounded-3xl border border-white/10 aspect-video overflow-hidden h-[225px] md:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-green-700/5 rounded-3xl opacity-50"></div>
 
               <motion.div
