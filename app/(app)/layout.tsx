@@ -1,29 +1,21 @@
 import MainDrawer from "@/components/MainDrawer";
 import Navbar from "@/components/Navbar";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  weight: "400",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function RootLayout({
+export default function AppLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${roboto.className} antialiased`}>
         <Navbar />
-        {/* {children} */}
 
         <main className="flex">
           {/* Drawer for large screen : */}
@@ -31,7 +23,6 @@ export default function RootLayout({
             <MainDrawer />
           </div>
 
-          {/* Children */}
           <div className="grow-[75vw] w-full">{children}</div>
         </main>
       </body>

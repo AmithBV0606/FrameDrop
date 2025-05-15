@@ -23,10 +23,7 @@ export default function RootLayout({
   return (
     <ClerkProvider appearance={{ baseTheme: dark }} telemetry={false}>
       <html lang="en">
-        <body
-          // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-          className={`${roboto.className}antialiased`}
-        >
+        <body className={`${roboto.className} antialiased`}>
           {children}
           <ToastContainer
             position="bottom-right"
