@@ -4,7 +4,7 @@ import { Carousel } from "./Carousel";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 pt-12 pb-24 overflow-hidden">
+    <section className="relative z-10 pt-12 pb-24 overflow-hidden" id="hero">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">

@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
-    <header className="relative z-10 bg-gradient-to-r from-gray-800/10 to-blue-900/10">
+    <header className="relative z-10 bg-gradient-to-r from-gray-800/10 to-blue-900/10" id="navbar">
       <div className="container mx-auto py-6 px-4">
         {/* Navbar for Navigation */}
         <nav className="flex justify-between items-center">
