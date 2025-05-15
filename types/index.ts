@@ -43,3 +43,10 @@ export interface Steps {
   description: string;
   image: string;
 }
+
+export interface Testimonials {
+  quote: string;
+  author: string;
+  role: string;
+  avatar: string;
+}
