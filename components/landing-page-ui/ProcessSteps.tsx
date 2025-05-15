@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import steps from "@/lib/steps";
 import StepButton from "./StepButton";
+import Link from "next/link";
 
 export function ProcessSteps() {
   const [activeStep, setActiveStep] = useState(0);
@@ -79,9 +80,11 @@ export function ProcessSteps() {
 
             {/* CTA Button : */}
             <div className="pt-6">
-              <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium rounded-full w-full p-4 cursor-pointer">
-                Try It Now
-              </button>
+              <Link href={"/sign-up"}>
+                <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium rounded-full w-full p-4 cursor-pointer">
+                  Try It Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,9 +1,13 @@
 import React from "react";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="relative z-10 bg-gradient-to-r from-gray-800/10 to-blue-900/10" id="navbar">
+    <header
+      className="relative z-10 bg-gradient-to-r from-gray-800/10 to-blue-900/10"
+      id="navbar"
+    >
       <div className="container mx-auto py-6 px-4">
         {/* Navbar for Navigation */}
         <nav className="flex justify-between items-center">
@@ -36,7 +40,7 @@ export default function Navbar() {
 
           {/* Navigation Menu : */}
           <div className="hidden md:flex">
-            <div className="bg-black/40 backdrop-blur-md rounded-full p-1 border border-white/10">
+            <div className="bg-gray-900 backdrop-blur-md rounded-full p-1 border border-white/10">
               <div className="flex gap-1">
                 <NavLink href="#features">Features</NavLink>
                 <NavLink href="#process">How It Works</NavLink>
@@ -47,13 +51,17 @@ export default function Navbar() {
 
           {/* CTA Buttons : */}
           <div className="flex items-center gap-4">
-            <button className="text-white hover:text-green-400 hover:bg-white/5 p-2 rounded-md cursor-pointer">
-              Log in
-            </button>
+            <Link href={"/sign-in"}>
+              <button className="text-white hover:text-green-400 hover:bg-white/5 px-6 py-3 rounded-md cursor-pointer text-lg">
+                Log in
+              </button>
+            </Link>
 
-            <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium rounded-full py-2 px-4">
-              Get Started
-            </button>
+            <Link href={"/sign-up"}>
+              <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium rounded-full py-3 px-6 cursor-pointer text-lg">
+                Get Started
+              </button>
+            </Link>
           </div>
         </nav>
       </div>

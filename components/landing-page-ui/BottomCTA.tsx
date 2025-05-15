@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function BottomCTA() {
@@ -21,14 +22,12 @@ export default function BottomCTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium text-lg px-8 py-3 rounded-full flex items-center">
-                <span>Start Free Trial</span>
-                <ChevronRight className="ml-2 h-7 w-7" />
-              </button>
-
-              <button className="border border-green-500 text-white hover:bg-green-500/10 text-lg px-8 py-3 rounded-full cursor-pointer">
-                Schedule Demo
-              </button>
+              <Link href={"/sign-up"}>
+                <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black font-medium text-lg px-8 py-3 rounded-full flex items-center cursor-pointer">
+                  <span>Register Now</span>
+                  <ChevronRight className="ml-2 h-7 w-7" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

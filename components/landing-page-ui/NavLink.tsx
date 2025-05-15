@@ -10,7 +10,7 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className="px-4 py-2 rounded-full hover:bg-white/10 transition-colors text-gray-200 hover:text-white"
+      className="px-4 py-2 rounded-full hover:bg-white/10 transition-colors text-gray-200 hover:text-white text-xl font-medium"
     >
       {children}
     </Link>
