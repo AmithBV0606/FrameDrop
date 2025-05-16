@@ -52,6 +52,8 @@ export function ProcessSteps() {
                   src={steps[activeStep].image || "/placeholder.svg"}
                   alt={steps[activeStep].title}
                   className="h-full w-full object-fill rounded-xl"
+                  width={400}
+                  height={300}
                 />
               </motion.div>
             </div>

@@ -75,6 +75,8 @@ export function Testimonials() {
                         }
                         alt={testimonials[activeIndex].author}
                         className="w-full h-full object-cover"
+                        height={100}
+                        width={100}
                       />
                     </div>
 
