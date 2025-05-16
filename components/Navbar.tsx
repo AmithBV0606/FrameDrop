@@ -1,9 +1,8 @@
 "use client";
 
-import { ImageIcon, LogOutIcon } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { LogOutIcon } from "lucide-react";
+import React, { useState } from "react";
 import { useClerk, UserButton, useUser } from "@clerk/nextjs";
-import Link from "next/link";
 import MobileDrawer from "./MobileDrawer";
 
 export default function Navbar() {

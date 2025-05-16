@@ -1,13 +1,13 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import steps from "@/lib/steps";
 import StepButton from "./StepButton";
 import Link from "next/link";
+import Image from "next/image";
 
 export function ProcessSteps() {
   const [activeStep, setActiveStep] = useState(0);
@@ -48,7 +48,7 @@ export function ProcessSteps() {
                 transition={{ duration: 0.5 }}
                 className="relative h-full w-full"
               >
-                <img
+                <Image
                   src={steps[activeStep].image || "/placeholder.svg"}
                   alt={steps[activeStep].title}
                   className="h-full w-full object-fill rounded-xl"

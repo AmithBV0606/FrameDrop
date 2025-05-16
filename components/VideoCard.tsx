@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { filesize } from "filesize";
 import { Video } from "@/app/generated/prisma";
+import Image from "next/image";
 
 // getCldImageUrl - Needed for creating thumbnails for the videos
 
@@ -105,10 +106,12 @@ export default function VideoCard({ video, onDownload }: VideoCardProps) {
             />
           )
         ) : (
-          <img
+          <Image
             src={getThumbnailUrl(video.publicId)}
             alt={video.title}
             className="w-full h-full object-cover"
+            width={400}
+            height={225}
           />
         )}
 

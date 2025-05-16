@@ -162,11 +162,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://Frame-Drop-DB_owner:npg_c6J8NpzgtuHV@ep-holy-boat-a1xnkkrp.ap-southeast-1.aws.neon.tech/Frame-Drop-DB?sslmode=require"
+        "value": null
       }
     }
   },

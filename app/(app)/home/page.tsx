@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import VideoCard from "@/components/VideoCard";
 import { Video } from "@/types";
 
-export default function page() {
+export default function Home() {
   const [videos, setVideos] = useState<Video[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import testimonials from "@/lib/testimonials";
+import Image from "next/image";
 
 export function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -61,14 +62,14 @@ export function Testimonials() {
                 >
                   {/* Quote : */}
                   <p className="text-xl md:text-2xl italic mb-8 relative z-10">
-                    "{testimonials[activeIndex].quote}"
+                    &quot;{testimonials[activeIndex].quote}&quot;
                   </p>
 
                   {/* About Author : */}
                   <div className="flex flex-col items-center">
                     {/* Author's Image : */}
                     <div className="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-green-500">
-                      <img
+                      <Image
                         src={
                           testimonials[activeIndex].avatar || "/placeholder.svg"
                         }

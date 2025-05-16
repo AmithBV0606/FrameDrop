@@ -2,7 +2,6 @@ import { FeatureShowcase } from "@/components/landing-page-ui/FeatureShowcase";
 import { ProcessSteps } from "@/components/landing-page-ui/ProcessSteps";
 import { Testimonials } from "@/components/landing-page-ui/Testimonials";
 import { Footer } from "@/components/landing-page-ui/Footer";
-import { ChevronRight, Menu } from "lucide-react";
 import Navbar from "@/components/landing-page-ui/Navbar";
 import HeroSection from "@/components/landing-page-ui/HeroSection";
 import BrandSection from "@/components/landing-page-ui/BrandSection";

@@ -17,7 +17,7 @@ export function Carousel() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [formats.length, hoveredIndex]);
+  }, [hoveredIndex]);
 
   return (
     <div className="relative h-[500px] w-full flex items-center justify-center">
