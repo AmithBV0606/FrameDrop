@@ -1,4 +1,7 @@
+import socialFormats from "@/lib/social-formats";
 import { LucideIcon } from "lucide-react";
+
+export type SocialFormat = keyof typeof socialFormats;
 
 export interface Video {
   id: string;
