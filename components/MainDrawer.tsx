@@ -9,10 +9,10 @@ export default function MainDrawer() {
   const pathname = usePathname();
 
   return (
-    <div className="drawer xl:drawer-open">
+    <div className="drawer xl:drawer-open h-full">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
-      <div className="drawer-side max-h-screen">
+      <div className="drawer-side h-full">
         <ul className="bg-black text-base-content h-full w-80 p-4 pl-14">
           {sidebarItems.map((item) => (
             <li className="my-4" key={item.href}>
