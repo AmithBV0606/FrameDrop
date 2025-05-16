@@ -14,7 +14,7 @@ export default function AuthLayout({
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
         {/* Special Navbar for Auth pages :  */}
-        <header className="relative z-10 bg-gradient-to-r from-green-700/10 to-gray-900">
+        <header className="relative z-10 bg-gradient-to-r from-green-700/10 to-black">
           <div className="container ml-0 sm:ml-12 py-6 px-4">
             <nav className="flex justify-between items-center">
               {/* Logo and SAAS Name : */}
@@ -41,7 +41,7 @@ export default function AuthLayout({
                 </div>
 
                 {/* SAAS Name : */}
-                <span className="text-xl font-bold tracking-tight">
+                <span className="text-2xl font-extrabold tracking-tight">
                   FrameDrop
                 </span>
               </div>
