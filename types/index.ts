@@ -4,6 +4,7 @@ import { LucideIcon } from "lucide-react";
 export type SocialFormat = keyof typeof socialFormats;
 
 export interface Video {
+  userId: string;
   id: string;
   title: string;
   description: string;
