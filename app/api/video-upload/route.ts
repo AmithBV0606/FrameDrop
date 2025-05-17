@@ -83,6 +83,7 @@ export async function POST(request: NextRequest) {
     // Saving the data of video in our Database.
     const video = await prisma.video.create({
       data: {
+        userId,
         title,
         description,
         publicId: result.public_id,
