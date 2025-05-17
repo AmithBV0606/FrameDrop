@@ -13,6 +13,12 @@
     <h3>
 </div>
 
+<div align="center"> 
+
+[![Watch the video](https://img.youtube.com/vi/n08fQqqWhuY/0.jpg)](https://www.youtube.com/watch?v=n08fQqqWhuY)
+
+</div>
+
 FrameDrop is a modern media utility web application that allows users to effortlessly adjust image aspect ratios for various social media platforms and compress video files for optimal web usage. Built using **Next.js**, **TailwindCSS (with DaisyUI)**, **Cloudinary**, and **Clerk** for authentication.
 
 ##
